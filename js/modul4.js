@@ -246,29 +246,29 @@ const colorPickerOptions = [
 //console.log(ascedingScores);
 //console.log(descendingScores);
 
-const students = [
-  { name: "Mango", score: 83, courses: ["matematyka", "fizyka"] },
-  { name: "Poly", score: 59, courses: ["informatyka", "fizyka"] },
-  { name: "Ajax", score: 37, courses: ["matematyka", "biologia"] },
-  { name: "Kiwi", score: 94, courses: ["polski"] },
-];
+// const students = [
+//   { name: "Mango", score: 83, courses: ["matematyka", "fizyka"] },
+//   { name: "Poly", score: 59, courses: ["informatyka", "fizyka"] },
+//   { name: "Ajax", score: 37, courses: ["matematyka", "biologia"] },
+//   { name: "Kiwi", score: 94, courses: ["polski"] },
+// ];
 
-const passedNames = students
-  .map((student) => {
-    if (student.score > 60) {
-      return student.name;
-    }
-  })
-  .filter((x) => x)
-  .map((name) => name.toLowerCase());
+// const passedNames = students
+//   .map((student) => {
+//     if (student.score > 60) {
+//       return student.name;
+//     }
+//   })
+//   .filter((x) => x)
+//   .map((name) => name.toLowerCase());
 
-// const passedNamesFiltered = passedNames.filter(x => x)
+// // const passedNamesFiltered = passedNames.filter(x => x)
 
-console.log(passedNames);
+// console.log(passedNames);
 
-const uniqueSortedCourses = students
-  .flatMap((student) => student.courses)
-  .filter((course, index, array) => array.indexOf(course) === index) //zeby byly unikalne
-  .sort((a, b) => a.localeCompare(b)); //sortujemy alfabetycznie
+// const uniqueSortedCourses = students
+//   .flatMap((student) => student.courses)
+//   .filter((course, index, array) => array.indexOf(course) === index) //zeby byly unikalne
+//   .sort((a, b) => a.localeCompare(b)); //sortujemy alfabetycznie
 
-console.log(uniqueSortedCourses);
+// console.log(uniqueSortedCourses);
