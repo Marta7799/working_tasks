@@ -67,51 +67,51 @@
 // });
 
 // const handleClick = (event) => {
-//     console.log({event})
-// }
+//   console.log({ event });
+// };
 
-// document.addEventListener('keydown', handleClick) // <- it's good!
+// document.addEventListener("keydown", handleClick); // <- it's good!
 
-// document.addEventListener('keyup', handleClick)
+// document.addEventListener("keyup", handleClick);
 
-// document.addEventListener('keydown', event => {
-//     event.preventDefault()
+// document.addEventListener("keydown", (event) => {
+//   event.preventDefault();
 
-//     console.log(event.code)
+//   console.log(event.code);
 
-//     //event.keyCode
+//   //event.keyCode
 
-//     if(event.ctrlKey && event.code === 'KeyP') {
-//         console.log('print!')
-//     }
-// })
-
-// const textOutput = document.querySelector(".text-output");
-// const valueOutput = document.querySelector(".value-output");
-// const select = document.querySelector(".pizza-select");
-
-// select.addEventListener("change", (event) => {
-//   const currentTarget = event.currentTarget;
-//   const { value, selectedIndex, options } = currentTarget;
-//   const text = options[selectedIndex].text;
-
-//   console.log({ value, selectedIndex, options });
-
-//   valueOutput.textContent = value;
-//   textOutput.textContent = text;
-// });
-
-// const textInput = document.querySelector(".text-input");
-// const textInputOutput = document.querySelector(".output");
-
-// textInput.addEventListener("input", (event) => {
-//   const value = event.currentTarget.value;
-
-//   if (value.length < 8) {
-//     textInputOutput.textContent = "minimum 8 znaków!";
-//   } else {
-//     textInputOutput.textContent = value;
+//   if (event.ctrlKey && event.code === "KeyP") {
+//     console.log("print!");
 //   }
 // });
 
-//document.activeElement
+const textOutput = document.querySelector(".text-output");
+const valueOutput = document.querySelector(".value-output");
+const select = document.querySelector(".pizza-select");
+
+select.addEventListener("change", (event) => {
+  const currentTarget = event.currentTarget;
+  const { value, selectedIndex, options } = currentTarget;
+  const text = options[selectedIndex].text;
+
+  console.log({ value, selectedIndex, options });
+
+  valueOutput.textContent = value;
+  textOutput.textContent = text;
+});
+
+const textInput = document.querySelector(".text-input");
+const textInputOutput = document.querySelector(".output");
+
+textInput.addEventListener("input", (event) => {
+  const value = event.currentTarget.value;
+
+  if (value.length < 8) {
+    textInputOutput.textContent = "minimum 8 znaków!";
+  } else {
+    textInputOutput.textContent = value;
+  }
+});
+
+document.activeElement;
