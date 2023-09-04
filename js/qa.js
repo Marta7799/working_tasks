@@ -87,31 +87,41 @@
 // console.log(result)
 // console.log(reduceResult)
 
-// const cars = ['BMW', 'Hyundai', 'Skoda', 'BMW', 'BMW', 'VW', 'Audi', 'Audi', 'Skoda'];
+// const cars = [
+//   "BMW",
+//   "Hyundai",
+//   "Skoda",
+//   "BMW",
+//   "BMW",
+//   "VW",
+//   "Audi",
+//   "Audi",
+//   "Skoda",
+// ];
 
 // const carsSorted = cars.reduce((acc, curr) => {
 //   // if (acc[curr]) ...
 //   if (curr in acc) {
-//     acc[curr]++
+//     acc[curr]++;
 //   } else {
-//     acc[curr] = 1
+//     acc[curr] = 1;
 //   }
 
 //   return acc;
-// }, {})
+// }, {});
 
-// console.log(carsSorted)
+// console.log(carsSorted);
 
 // .map -> nową tablicę
 // .forEach -> działać na obecnej
 
-// const textOutput = document.querySelector('.text-output')
-// const html = `<span>Hello</span>`
+// const textOutput = document.querySelector(".text-output");
+// const html = `<span>Hello</span>`;
 
 // textOutput.innerHTML += html;
-// textOutput.append(html)
+// textOutput.append(html);
 
-// console.log(textOutput)
+// console.log(textOutput);
 
 // 1
 // this wskazuje na obiekt/klasę -> JEST OK
@@ -146,30 +156,30 @@
 //   }
 // }
 
-// const button = document.querySelector('.goit')
+// const button = document.querySelector(".goit");
 
 // const handler = () => {
-//   // console.log(this)
-//   // console.log('------------')
-//   userObj.showUser()
-//   userObj.showUserFunc()
-// }
+// console.log(this);
+// console.log("------------");
+//   userObj.showUser();
+//   userObj.showUserFunc();
+// };
 
 // function handlerFunc() {
-//   // console.log(this);
-//   userObj.showUser()
-//   userObj.showUserFunc()
+// console.log(this);
+//   userObj.showUser();
+//   userObj.showUserFunc();
 // }
 
 // const userObj = {
-//   name: 'Asia',
+//   name: "Asia",
 //   showUserFunc() {
-//     console.log(`Func: ${this.name}`)
+//     console.log(`Func: ${this.name}`);
 //   },
 //   showUser: () => {
-//     console.log(`Arrow: ${this.name}`)
-//   }
-// }
+//     console.log(`Arrow: ${this.name}`);
+//   },
+// };
 
 // const array = [1, 2, 3, 4, 5]
 
@@ -177,9 +187,9 @@
 
 // })
 
-// button.addEventListener('click', handler)
+// button.addEventListener("click", handler);
 
-// button.addEventListener('click', handlerFunc)
+// button.addEventListener("click", handlerFunc);
 
 // const user = {
 //   username: 'Asia',
