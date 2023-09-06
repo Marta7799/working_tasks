@@ -28,6 +28,7 @@ body {
 }
 
 .box {
+  min-width: 180px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
