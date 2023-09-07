@@ -1,7 +1,11 @@
 //licznik ptrzy scrollowaniu//
 
-const output = document.querySelector(".output");
-let scrollEventCounter = 0;
+const normalOutput = document.querySelector(".output.normal");
+const throttledOutput = document.querySelector(".output.throttled");
+const scrollEventCounter = {
+  normal: 0,
+  throttled: 0,
+};
 
 //1 sposób//
 // document.addEventListener("wheel", (e) => {
@@ -22,8 +26,8 @@ let scrollEventCounter = 0;
 
 //2 sposób//
 document.addEventListener("scroll", () => {
-  scrollEventCounter += 1;
-  output.textContent = scrollEventCounter;
+  scrollEventCounter.normal += 1;
+  normalOutput.textContent = scrollEventCounter.normal;
 });
 
 document.addEventListener(
