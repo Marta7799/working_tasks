@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "validator": "^13.11.0"
+    "validator": "^13.11.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
     "ajv": "^8.12.0"
