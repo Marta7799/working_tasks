@@ -81,18 +81,24 @@
 // console.log(date.toLocaleString());
 // console.log(date.getTime());
 
-//zegar
-setInterval(() => {
-  console.log(new Date().toLocaleString());
-}, 1000);
+// //zegar
+// setInterval(() => {
+//   console.log(new Date().toLocaleString());
+// }, 1000);
 
 // setInterval(() => {
-//   console.timeEnd("start");
-//   //   console.clear();
-
-//   //   date.setTime(date.getTime() + 1000);
-//   //   console.log(date.toLocaleString());
-
+//   console.clear();
 //   console.log(new Date().toLocaleString());
+// }, 1000);
+
+const date = new Date();
+// setInterval(() => {
 //   console.time("start");
+//   // console.clear();
+
+//   date.setTime(date.getTime() + 1000);
+//   console.log(date.toLocaleString());
+
+//   //console.log(new Date().toLocaleString());
+//   console.timeEnd("start");
 // }, 1000);
