@@ -7,7 +7,7 @@
 
 const add = require("./calc");
 
-// console.log(greeter.hello());
+// // console.log(greeter.hello());
 console.log(add(5, 10));
 // console.log(greeter.goodbye());
 
