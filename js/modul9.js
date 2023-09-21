@@ -103,144 +103,148 @@
 //   console.timeEnd("start");
 // }, 1000);
 
-const isSuccess = true;
+// const isSuccess = true;
 
-const promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    if (isSuccess) {
-      resolve("Yey, it works");
-    } else {
-      reject("Not working, error");
-    }
-  }, 3000);
-});
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Yey, it works");
+//     } else {
+//       reject("Not working, error");
+//     }
+//   }, 3000);
+// });
 
-console.log("Promise prepared, wait for then!");
+// console.log("Promise prepared, wait for then!");
 
-const fullfiled = (value) => {
-  console.log("fulfilled!");
-  console.log(value);
-  // return new Promise()
-};
-
-const reject = (error) => {
-  console.log("error!");
-  console.log(error);
-};
-
-const finallyFunc = () => {
-  console.log("finally!");
-};
-
-promise
-  .then(fullfiled)
-  .then(() => console.log("then"))
-  .catch(reject)
-  .finally(finallyFunc);
-
-// const promiseCalc = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve(5)
-//     }, 1000)
-// })
-
-// promiseCalc
-//     .then(value => {
-//         console.log('start')
-//         console.log(value)
-//         return value * 2;
-//     })
-//     .then(value => {
-//         console.log(value)
-//         return value * 2;
-//     })
-//     .then(value => {
-//         console.log(value)
-//         return value * 2;
-//     })
-//     .then(value => {
-//         console.log(value)
-//     })
-//     .catch(() => {})
-//     .finally(() => {
-//         console.log('the end')
-//     })
-
-// const fetchUserFromServer = (username) => {
-//     return new Promise((resolve, reject) => {
-//         console.log(`Fetching data for ${username}`)
-
-//         setTimeout(() => {
-//             const isSuccess = true;
-
-//             if (isSuccess) {
-//                 resolve('success value') -> Promise.resolve(...)
-//             } else {
-//                 reject('error')
-//             }
-//         }, 2000)
-//     })
-// }
-
-// const onFetchSuccess = value => {
-//     console.log(value);
-// }
-
-// const onFetchError = error => {
-//     console.log(error)
-// }
-
-// fetchUserFromServer('Piotr')
-//     .then(onFetchSuccess)
-//     .then(() => console.log('i am here'))
-//     .catch(onFetchError)
-//     .finally(() => console.log('finally'))
-
-// const makePromise = (text, delay) => {
-//     return new Promise((resolve) => {
-//         setTimeout(() => resolve(text), delay)
-//     })
-// }
-
-// const promiseA = makePromise('promiseA', 3000)
-// const promiseB = makePromise('promiseB', 1000)
-
-// promiseA.then((value) => console.log(value))
-// promiseB.then((value) => console.log(value))
-
-// console.log('----------------------')
-
-// Promise.all([promiseA, promiseB])
-//     .then((value) => {
-//         console.log(value)
-//     })
-
-// Promise.race([promiseA, promiseB])
-//     .then((value) => {
-//         console.log(value)
-//     })
-
-// new Promise((resolve) => resolve("its good")).then((value) =>
-//   console.log(value)
-// );
-
-// Promise.resolve("success value").then((value) => console.log(value));
-
-// // index.js
-// // index.css
-
-// import flatpickr from "flatpickr";
-// import "flatpickr/dist/flatpickr.min.css";
-// import "./index.css";
-
-// const options = {
-//   enableTime: true,
-//   time_24hr: true,
-//   defaultDate: new Date(),
-//   minuteIncrement: 1,
-//   onClose(selectedDates) {
-//     console.log(selectedDates[0]);
-//   },
+// const fullfiled = (value) => {
+//   console.log("fulfilled!");
+//   console.log(value);
+//   // return new Promise()
 // };
 
-// flatpickr("#datetime-picker", options);
+// const reject = (error) => {
+//   console.log("error!");
+//   console.log(error);
+// };
+
+// const finallyFunc = () => {
+//   console.log("finally!");
+// };
+
+// promise
+//   .then(fullfiled)
+//   .then(() => console.log("then"))
+//   .catch(reject)
+//   .finally(finallyFunc);
+
+// const promiseCalc = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve(5);
+//   }, 1000);
+// });
+
+// promiseCalc
+//   .then((value) => {
+//     console.log("start");
+//     console.log(value);
+//     return value * 2;
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     return value * 2;
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     return value * 2;
+//   })
+//   .then((value) => {
+//     console.log(value);
+//   })
+//   .catch(() => {})
+//   .finally(() => {
+//     console.log("the end");
+//   });
+
+// const fetchUserFromServer = (username) => {
+//   return new Promise((resolve, reject) => {
+//     console.log(`Fetching data for ${username}`);
+
+//     setTimeout(() => {
+//       const isSuccess = true;
+
+//       if (isSuccess) {
+//         resolve("success value"); //-> Promise.resolve(...)
+//       } else {
+//         reject("error");
+//       }
+//     }, 2000);
+//   });
+// };
+
+// const onFetchSuccess = (value) => {
+//   console.log(value);
+// };
+
+// const onFetchError = (error) => {
+//   console.log(error);
+// };
+
+// fetchUserFromServer("Piotr")
+//   .then(onFetchSuccess)
+//   .then(() => console.log("i am here"))
+//   .catch(onFetchError)
+//   .finally(() => console.log("finally"));
+
+// const makePromise = (text, delay) => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(text), delay);
+//   });
+// };
+
+// const promiseA = makePromise("promiseA", 3000);
+// const promiseB = makePromise("promiseB", 1000);
+
+// promiseA.then((value) => console.log(value));
+// promiseB.then((value) => console.log(value));
+
+// console.log("----------------------");
+
+// Promise.all([promiseA, promiseB]).then((value) => {
+//   console.log(value);
+// });
+
+// Promise.race([promiseA, promiseB]).then((value) => {
+//   console.log(value);
+// });
+
+new Promise((resolve) => resolve("its good")).then((value) =>
+  console.log(value)
+);
+
+Promise.resolve("success value").then((value) => console.log(value));
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve(5);
+//   }, 2000);
+// });
+
+// promise
+//   .then((value) => {
+//     console.log(value); // 5
+//     return value * 2;
+//   })
+//   .then((value) => {
+//     console.log(value); // 10
+//     return value * 3;
+//   })
+//   .then((value) => {
+//     console.log(value); // 30
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("Final task");
+//   });
