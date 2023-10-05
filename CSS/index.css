@@ -1,0 +1,14 @@
+body {
+  height: 98vh;
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
